@@ -1,8 +1,12 @@
 import java.util.ArrayList;
 
 public class NoNullArrayList<T> extends ArrayList<T> {
-  public NoNullArrayList() {
-    super.ArrayList();
+  NoNullArrayList() {
+    super();
+  }
+
+  NoNullArrayList(int startingCapacity) {
+    super(startingCapacity);
   }
 
   public set() {
