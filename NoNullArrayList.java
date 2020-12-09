@@ -18,6 +18,10 @@ public class NoNullArrayList<T> extends ArrayList<T> {
   }
 
   public add() {
-
+    if (NoNullArrayList() == null) {
+      throw new IllegalArgumentException();
+    } else {
+      super.add();
+    }
   }
 }
