@@ -10,7 +10,11 @@ public class NoNullArrayList<T> extends ArrayList<T> {
   }
 
   public set() {
-    // if (T == null)
+    if (NoNullArrayList() == null) {
+      throw new IllegalArgumentException();
+    } else {
+      super.set();
+    }
   }
 
   public add() {
