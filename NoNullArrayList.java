@@ -9,11 +9,11 @@ public class NoNullArrayList<T> extends ArrayList<T> {
     super(startingCapacity);
   }
 
-  public set() {
+  public set(int index; T value) {
     if (NoNullArrayList() == null) {
       throw new IllegalArgumentException();
     } else {
-      super.set();
+      super.set(index, value);
     }
   }
 
@@ -25,7 +25,7 @@ public class NoNullArrayList<T> extends ArrayList<T> {
     }
   }
 
-  public add(index) {
+  public add(int index) {
     if (NoNullArrayList() == null) {
       throw new IllegalArgumentException();
     } else {
