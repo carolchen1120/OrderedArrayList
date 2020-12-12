@@ -9,5 +9,19 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
     super(startingCapacity);
   }
 
-  
+  public set(int index, T value) {
+
+  }
+
+  public add() {
+    if (OrderedArrayList() == null) {
+      throw new IllegalArgumentException();
+    } else {
+      super.add();
+    }
+  }
+
+  public add(int index) {
+    
+  }
 }
