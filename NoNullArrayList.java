@@ -24,4 +24,12 @@ public class NoNullArrayList<T> extends ArrayList<T> {
       super.add();
     }
   }
+
+  public add(index) {
+    if (NoNullArrayList() == null) {
+      throw new IllegalArgumentException();
+    } else {
+      super.add(index);
+    }
+  }
 }
