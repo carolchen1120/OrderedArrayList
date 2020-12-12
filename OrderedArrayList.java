@@ -10,7 +10,12 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
   }
 
   public set(int index, T value) {
-
+    if (OrderedArrayList() == null) {
+      throw new IllegalArgumentException();
+    } else {
+      super.remove(index);
+      super.add(index, value);
+    }
   }
 
   public add() {
