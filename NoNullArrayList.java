@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
 public class NoNullArrayList<T> extends ArrayList<T> {
-  NoNullArrayList() {
+  public NoNullArrayList() {
     super();
   }
 
-  NoNullArrayList(int startingCapacity) {
+  public NoNullArrayList(int startingCapacity) {
     super(startingCapacity);
   }
 
