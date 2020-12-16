@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
 public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T> {
-  public OrderedArrayList() {
+  OrderedArrayList() {
     super();
   }
 
-  public OrderedArrayList(int startingCapacity) {
+  OrderedArrayList(int startingCapacity) {
     super(startingCapacity);
   }
 
