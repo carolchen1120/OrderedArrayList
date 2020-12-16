@@ -10,29 +10,28 @@ public class NoNullArrayList<T> extends ArrayList<T> {
   }
 
   public T set(int index, T value) {
-    if (NoNullArrayList() == null) {
-      throw new IllegalArgumentException();
+    if (value == null) {
+      throw new IllegalArgumentException("There was a Null value.");
     } else {
       super.set(index, value);
       return value;
     }
   }
 
-  public boolean add() {
-    if (NoNullArrayList() == null) {
-      throw new IllegalArgumentException();
+  public boolean add(T value) {
+    if (value == null) {
+      throw new IllegalArgumentException("There was a Null value.");
     } else {
-      super.add();
+      super.add(value);
       return true;
     }
   }
 
-  public boolean add(int index) {
-    if (NoNullArrayList() == null) {
-      throw new IllegalArgumentException();
+  public void add(int index, T value) {
+    if (value == null) {
+      throw new IllegalArgumentException("There was a Null value.");
     } else {
-      super.add(index);
-      return true;
+      super.add(index, value);
     }
   }
 }
